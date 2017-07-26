@@ -9,16 +9,16 @@ var Lang = (function() {
 
   return {
     getJapan: function() {
-    console.log('List of Japanese words', japanWords);
-    return japanWords;
-  },
+      console.log('List of Japanese words', japanWords);
+      return japanWords;
+    },
 
     getJapanLocation: function() {
-    return japanese;
-  },
+      return japanese;
+    },
     addJapan: function(whatWord) {
-    japanWords.push(whatWord);
-    console.log('jWords', japanWords);
+      japanWords.push(whatWord);
+      console.log('jWords', japanWords);
     }
   }
 
