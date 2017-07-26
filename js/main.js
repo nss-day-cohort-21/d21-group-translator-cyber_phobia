@@ -1,11 +1,21 @@
 console.log("main.js active");
 
-// let japanButton = document.getElementById('getJapanLang');
-// japanButton.addEventListener('click', getJapanLang);
 
-// function getJapanLang(event) {
-//   Lang.getJapan();
-// }
+/***********  R2D2 SCRIPT  ***************/
+
+let btnTranslate = document.getElementById('getR2D2Lang');
+btnTranslate.addEventListener('click', getR2D2Lang);
+
+function getR2D2Lang(event) {
+  Lang.getJapan();
+  
+  function getJapanLang(event) {
+  Lang.getDroid();
+    
+}
+
+
+/*********** Japanese SCRIPT  ***************/
 
 let btnTranslate = document.getElementById('frenchLang');
 let btnTranslate = document.getElementById('spanishLang');
@@ -16,13 +26,12 @@ btnTranslate.addEventListener('click', japanLang);
 
 function japanLang(event) {
   Lang.japanLang();
+
 }
 
 
-/***********  SCRIPT  ***************/
 
 
-/***********  SCRIPT  ***************/
 
 
 /***********  SCRIPT  ***************/
