@@ -26,7 +26,8 @@ var Lang = (function() {
 
 })();
 
-
+// Starwars.getEvil()
+// Lang.translateJapanese
 
   // return {
   //   getJapan: function() {
