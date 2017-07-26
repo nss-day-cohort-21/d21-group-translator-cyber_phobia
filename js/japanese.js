@@ -2,21 +2,23 @@ console.log('japanese.js');
 
 var Lang = (function() {
   let japanese = 'Nihongo';
-  let japWords = ['Merri', 'Kurisumasu', 'soshite', 'Hapii', 'Atarashi', 'Toshi'];
+  let japanWords = { merry: 'Merri', christmas: 'Kurisumasu', and: 'soshite', happy: 'Hapii', new: 'Atarashi', year: 'Toshi' };
+  let japanWords2 = { wishing: 'negai', you: 'kimi wa', joy: 'yorokobi', and: 'soshite', peace: 'heiwa' };
+  let japanWords3 = { best: 'Besuto', wishes: 'negai', for: 'tame ni', the: 'sono', new: 'Atarashi', year: 'Toshi' };
 
 
   return {
-    getJap: function() {
-    console.log('List of Japanese words', japWords);
-    return japWords;
+    getJapan: function() {
+    console.log('List of Japanese words', japanWords);
+    return japanWords;
   },
 
-    getJapLocation: function() {
+    getJapanLocation: function() {
     return japanese;
   },
-    addJap: function(whatWord) {
-    japWords.push(whatWord);
-    console.log('jWords', japWords);
+    addJapan: function(whatWord) {
+    japanWords.push(whatWord);
+    console.log('jWords', japanWords);
     }
   }
 
@@ -29,8 +31,6 @@ var Lang = (function() {
   // }
 
 
-
-
   // translateToJapanese method accepts single argument
 
 // {"merry":"merrii",
@@ -39,7 +39,6 @@ var Lang = (function() {
 // "happy":"hapii",
 // "new": "atarashi,
 // "year":"toshi"}
-
 
 
 // Your project should have one HTML file that has a textarea, a select element with an option for each language, a button with a label of "Translate", and an empty DOM element into which the translated text will be inserted.

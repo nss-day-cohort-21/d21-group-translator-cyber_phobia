@@ -1,11 +1,12 @@
 console.log("main.js active");
 
-let japButton = document.getElementById('getJapLang');
-japButton.addEventListener('click', getJapLang);
+let japanButton = document.getElementById('getJapanLang');
+japanButton.addEventListener('click', getJapanLang);
 
-function getJapLang(event) {
-  Lang.getJap();
+function getJapanLang(event) {
+  Lang.getJapan();
 }
+
 /***********  SCRIPT  ***************/
 
 
