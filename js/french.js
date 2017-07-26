@@ -1,7 +1,16 @@
 // IIFE
-// joyeux noel et bonne annee
+
+// Merry Christmas and Happy New Year 
+//joyeux noel et bonne annee
+
 var Lang = (function(object) {
-let fWords = {"joyeux", "noel",	"et", "bonne","annee"};
+let french = {
+	"merry":"joyeux", 
+	"christmas":"noel", 
+	"and":"et", 
+	"happy":"bonne", 
+	"year":"annee"
+};
 
 	return {
     translateToFrench: function(words) {
