@@ -16,6 +16,7 @@
 				<div>
 					<p>Choose a language to translate to:</p>
 					<select id="selectLang" name="languages">
+						<option value="selectLanguage">Select Language</option>
 						<option value="frenchLang">French</option>
 						<option value="spanishLang">Spanish</option>
 						<option value="japanLang">Japanese</option>
@@ -25,18 +26,19 @@
 						<br>
 						<br>
 						<label>Input</label><input type="text" id="inputText">
+						<p id="textArea"></p>
 					</div>
 				</div>
 				<br>
 				<br>
-				<button id="btnTranslate">Translate</button>
+				<button type="button" onclick="selectLang()" id="btnTranslate">Translate</button>
 
 				<label>Translation:</label><output type="text" id='outputText'>
 
 			</div>
 			<br>
 			<!--**************Google Translate the page into other languages****************  -->
-		<p>Translate this page:</p>		
+		<p>Translate this page:</p>
 				<div id="google_translate_element">
 				<script type="text/javascript">
 				function googleTranslateElementInit() {

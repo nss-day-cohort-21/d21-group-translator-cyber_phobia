@@ -1,6 +1,6 @@
 console.log('japanese.js');
 
-var Lang = (function() {
+var Lang = (function(object) {
   let japanese = 'Nihongo';
   let japanWords = {
   merry: 'Merri',
@@ -8,40 +8,18 @@ var Lang = (function() {
   and: 'soshite',
   happy: 'Hapii',
   new: 'Atarashi',
-  year: 'Toshi' };
-});
+  year: 'Toshi'
+};
 
-console.log(Lang)
+  return {
+    translateJapanese: function(words) {
+      console.log('words', words);
+      let translation = japanWords[words];
+      console.log(translation);
+    }
+  }
 
-//   return {
-//     translateToJapanese: function(value) {
-//       console.log('List of Japanese words', japanWords);
-//       return japanese;
-//     },
-
-//   getJapanLocation: function() {
-//       debugger
-//       return japanese;
-//     },
-
-//     addjapanWords: function(whatWord) {
-//       debugger
-//       japanWords.push(whatWord);
-//       console.log('jWords', japanWords);
-//     },
-
-//   addjapanWords: function(which, word) {
-//     let whichIndex;
-//     japanWords.forEach(function(word, index) {
-//       if (word ===  which) {
-//         whichIndex = index;
-//         word.splice(whichIndex, 1);
-//         console.log('words from japanWords', japanWords);
-//         }
-//     },
-//   }
-
-// })();
+})(Lang);
 
 
 
