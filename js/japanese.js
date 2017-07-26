@@ -1,4 +1,4 @@
-// console.log('japanese.js');
+console.log('japanese.js');
 
 var Lang = (function() {
   let japanese = 'Nihongo';
@@ -9,36 +9,43 @@ var Lang = (function() {
   happy: 'Hapii',
   new: 'Atarashi',
   year: 'Toshi' };
+});
 
-  return {
-    translateToJapanese: function(value) {
-      console.log('List of Japanese words', japanWords);
-      return japanese;
-    },
+console.log(Lang)
 
-  getJapanLocation: function() {
-      debugger
-      return japanese;
-    },
+//   return {
+//     translateToJapanese: function(value) {
+//       console.log('List of Japanese words', japanWords);
+//       return japanese;
+//     },
 
-    addjapanWords: function(whatWord) {
-      debugger
-      japanWords.push(whatWord);
-      console.log('jWords', japanWords);
-    },
+//   getJapanLocation: function() {
+//       debugger
+//       return japanese;
+//     },
 
-  addjapanWords: function(which, word) {
-    let whichIndex;
-    japanWords.forEach(function(word, index) {
-      if (word ===  which) {
-        whichIndex = index;
-        word.splice(whichIndex, 1);
-        console.log('words from japanWords', japanWords);
-        }
-    },
-  }
+//     addjapanWords: function(whatWord) {
+//       debugger
+//       japanWords.push(whatWord);
+//       console.log('jWords', japanWords);
+//     },
 
-})();
+//   addjapanWords: function(which, word) {
+//     let whichIndex;
+//     japanWords.forEach(function(word, index) {
+//       if (word ===  which) {
+//         whichIndex = index;
+//         word.splice(whichIndex, 1);
+//         console.log('words from japanWords', japanWords);
+//         }
+//     },
+//   }
+
+// })();
+
+
+
+
 
 // Starwars.getEvil()
 // Lang.translateJapanese
