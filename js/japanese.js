@@ -8,23 +8,33 @@ var Lang = (function() {
 
 
   return {
-    getJapan: function() {
+    translateToJapanese: function(value) {
       console.log('List of Japanese words', japanWords);
       return japanWords;
     },
 
-    getJapanLocation: function() {
-      return japanese;
-    },
-    addJapan: function(whatWord) {
-      japanWords.push(whatWord);
-      console.log('jWords', japanWords);
-    }
+    // getJapanLocation: function() {
+    //   debugger
+    //   return japanese;
+    // },
+    // addJapan: function(whatWord) {
+    //   debugger
+    //   japanWords.push(whatWord);
+    //   console.log('jWords', japanWords);
+    // }
   }
 
 })();
 
-  // japLang.getLocation = function(whatWord) {
+
+
+  // return {
+  //   getJapan: function() {
+  //     console.log('List of Japanese words', japanWords);
+  //     return japanWords;
+  //   },
+
+  // Lang.getLocation = function(whatWord) {
   //   console.log('whatWord', whatWord)
   //   // let tell = true;
   //   // let
