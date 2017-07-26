@@ -1,7 +1,7 @@
 
 console.log('r2d2.js');
 
-var Lang = (function(object) {
+var Lang = (function(oilBath) {
   let r2d2 = 'Droid';
   let r2Words = {
   merry: 'screeewp-dip-dip-dip',
@@ -12,12 +12,14 @@ var Lang = (function(object) {
   year: 'jaja-wheeeeee-dre'
 };
 
-  return {
-    translater2d2: function(words) {
-      console.log('words', words);
-      let translation = r2Words[words];
-      console.log(translation);
-    }
+
+  oilBath.translater2d2 = function(words){
+    console.log(words);
+    let translation = r2Words[words];
+    console.log(translation);
+  
   }
+
+return oilBath;
 
 })(Lang);
