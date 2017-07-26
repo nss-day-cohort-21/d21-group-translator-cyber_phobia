@@ -1,32 +1,47 @@
-console.log('japanese.js');
+// console.log('japanese.js');
 
 var Lang = (function() {
   let japanese = 'Nihongo';
-  let japanWords = { merry: 'Merri', christmas: 'Kurisumasu', and: 'soshite', happy: 'Hapii', new: 'Atarashi', year: 'Toshi' };
-  let japanWords2 = { wishing: 'negai', you: 'kimi wa', joy: 'yorokobi', and: 'soshite', peace: 'heiwa' };
-  let japanWords3 = { best: 'Besuto', wishes: 'negai', for: 'tame ni', the: 'sono', new: 'Atarashi', year: 'Toshi' };
-
+  let japanWords = {
+  merry: 'Merri',
+  christmas: 'Kurisumasu',
+  and: 'soshite',
+  happy: 'Hapii',
+  new: 'Atarashi',
+  year: 'Toshi' };
 
   return {
     translateToJapanese: function(value) {
       console.log('List of Japanese words', japanWords);
-      return japanWords;
+      return japanese;
     },
 
-    // getJapanLocation: function() {
-    //   debugger
-    //   return japanese;
-    // },
-    // addJapan: function(whatWord) {
-    //   debugger
-    //   japanWords.push(whatWord);
-    //   console.log('jWords', japanWords);
-    // }
+  getJapanLocation: function() {
+      debugger
+      return japanese;
+    },
+
+    addjapanWords: function(whatWord) {
+      debugger
+      japanWords.push(whatWord);
+      console.log('jWords', japanWords);
+    },
+
+  addjapanWords: function(which, word) {
+    let whichIndex;
+    japanWords.forEach(function(word, index) {
+      if (word ===  which) {
+        whichIndex = index;
+        word.splice(whichIndex, 1);
+        console.log('words from japanWords', japanWords);
+        }
+    },
   }
 
 })();
 
-
+// Starwars.getEvil()
+// Lang.translateJapanese
 
   // return {
   //   getJapan: function() {
