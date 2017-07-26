@@ -7,12 +7,15 @@ console.log("main.js active");
 //   Lang.getJapan();
 // }
 
+let btnTranslate = document.getElementById('frenchLang');
+let btnTranslate = document.getElementById('spanishLang');
+let btnTranslate = document.getElementById('japanLang');
+let btnTranslate = document.getElementById('r2d2Lang');
 
-let btnTranslate = document.getElementById('getJapanLang');
-btnTranslate.addEventListener('click', getJapanLang);
+btnTranslate.addEventListener('click', japanLang);
 
-function getJapanLang(event) {
-  Lang.getJapan();
+function japanLang(event) {
+  Lang.japanLang();
 }
 
 
