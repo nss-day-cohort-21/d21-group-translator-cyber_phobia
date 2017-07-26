@@ -23,8 +23,20 @@ let translate = document.getElementById('btnTranslate');
     function translateText (event) {
       let words = document.getElementById('inputText').value;
       let select = document.getElementById('selectLang').value;
-      Lang.translateJapanese(words);
-  }
+        console.log(select);
+      // Lang.translateJapanese(words);
+      if(select === 'frenchLang'){
+      return Lang.translateFrench(words);
+        }else if (select === 'spanishLang'){
+            return Lang.translateSpanish(words);
+        }else if (select === 'japanLang'){
+            return Lang.translateJapanese(words);
+        }else(select === 'r2d2Lang'){
+            return Lang.translateR2D2(words);
+        };
+
+        
+  
 
     function selectLang () {
       let select = document.getElementById('selectLang').value;
@@ -32,4 +44,4 @@ let translate = document.getElementById('btnTranslate');
       console.log(select);
       return select;
     }
-
+    }
