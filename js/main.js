@@ -31,8 +31,8 @@ let translate = document.getElementById('btnTranslate');
             return Lang.translateSpanish(words);
         }else if (select === 'japanLang'){
             return Lang.translateJapanese(words);
-        }else(select === 'r2d2Lang'){
-            return Lang.translateR2D2(words);
+        }else if(select === 'r2d2Lang') {
+            return Lang.translater2d2(words);
         };
 
         
