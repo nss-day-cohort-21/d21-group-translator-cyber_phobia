@@ -1,7 +1,6 @@
 console.log('japanese.js');
 
 var Lang = (function(object) {
-  // console.log(object);
   let japanese = 'Nihongo';
   let japanWords = {
   merry: 'Merri',
@@ -23,7 +22,7 @@ var Lang = (function(object) {
 })(Lang);
 
 
-// *********Add in notes from cell camera*************
+
 
 
 // Starwars.getEvil()
